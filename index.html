@@ -1,1 +1,163 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Joshua Reeves | Developer</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --text: #f1f5f9;
+            --accent: #38bdf8;
+            --secondary: #94a3b8;
+            --card: #1e293b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1.5rem;
+        }
+
+        h1 { font-size: 3rem; margin: 0; }
+        .subtitle { color: var(--accent); font-weight: bold; font-family: monospace; }
+
+        .project-grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--card);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            background: #334155;
+            color: var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            margin-right: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .links { margin-top: 1rem; }
+        .links a { color: var(--accent); text-decoration: none; margin-right: 1rem; font-size: 0.9rem; }
+        .links a:hover { text-decoration: underline; }
+
+        .graveyard {
+            margin-top: 4rem;
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-bottom: 2rem;
+            text-align: center;
+            border-top: 1px solid #334155;
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Joshua Reeves</h1>
+        <div class="subtitle">> Problem Solver. Automation Enthusiast. Builder.</div>
+        <p>I build software that respects constraints.</p>
+    </header>
+
+    <section class="project-grid">
+        <div class="project-card">
+            <span class="tag">Live Data</span><span class="tag">Laravel</span><span class="tag">Vue</span>
+            <h3>ISS Battleship</h3>
+            <figure>
+                <img src="guess-where-is-iss.jpg" alt="ISS Battleship Preview" style="width:100%; border-radius: 4px; margin-bottom: 1rem;">
+                <figcaption style="font-size: 0.8rem; color: var(--secondary); text-align: center;">Early proof of concept.</figcaption>
+            <p>A strategy game where ship positions are dictated by the real-time coordinates of the International Space Station. Combines API integration with complex state management.</p>
+            <div class="links">
+                <a href="https://whereiss.beforewegolive.dev">View Demo</a>
+                <a href="https://github.com/Albatrossd/iss-battleship">Source Code</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="tag">Optimization</span><span class="tag">HTML5</span><span class="tag">Vanilla JS</span>
+            <h3>Kindle Fiction Engine</h3>
+            <figure>
+                <img src="kindle-if-story.jpg" alt="Kindle Fiction Engine Preview" style="width:100%; border-radius: 4px; margin-bottom: 1rem;">
+                <figcaption style="font-size: 0.8rem; color: var(--secondary); text-align: center;">Designed for the Kindle experimental browser.</figcaption>
+            </figure>
+            <p>A barebones interactive fiction framework designed specifically for the limited CSS/JS support of the Kindle experimental browser. Focuses on extreme accessibility and low-latency UI.</p>
+            <div class="links">
+                <a href="https://github.com/Albatrossd/IFStoryParser">Source Code</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="tag">Automation</span><span class="tag">Node.js</span><span class="tag">Python</span>
+            <h3>The Career Suite</h3>
+            <p>Two-part toolset: A <strong>Resume Tailor</strong> that adjusts keywords based on job descriptions and a <strong>Cover Letter Generator</strong> to eliminate repetitive application overhead.</p>
+            <div class="links">
+                <a href="#">View Demo</a>
+                <a href="#">Source Code</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <span class="tag">Scripts</span>
+            <h3>WP Launch Scripts</h3>
+            <p>Custom Bash and PHP scripts that handle the "Day Zero" setup for WordPress—automating security hardening, plugin pruning, and configuration in seconds.</p>
+            <div class="links">
+                <a href="#">Source Code</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="graveyard">
+        <h3>The Project Graveyard</h3>
+        <p>I’ve also built a Twitter tone meters with IBM Watson, several defunct menu layouts, and a few experimental projects that didn’t quite make it to the finish line. I keep them around to remember that shipping is better than perfecting.</p>
+    </section>
+
+    <footer>
+        <p>Interested in hiring me? <a href="mailto:joshua@albatrossd.com" style="color:var(--accent)">Let's talk.</a></p>
+        <div class="links">
+            <a href="https://Albatrossd.com">Website</a>
+            <a href="https://github.com/Albatrossd">GitHub</a>
+            <a href="https://www.linkedin.com/in/joshua-reeves-albatrossd/">LinkedIn</a>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
